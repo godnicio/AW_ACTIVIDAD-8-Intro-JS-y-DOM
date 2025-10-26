@@ -1,0 +1,44 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: black;
+    width: 180px;           
+    height: 100vh;         
+    position: fixed;      
+    padding-top: 20px;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px 16px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.contenido {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+input{
+    background-color:black;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+input:hover {
+    background-color: #555;
+}

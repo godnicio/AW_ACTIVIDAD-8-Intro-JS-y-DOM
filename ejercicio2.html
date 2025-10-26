@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AW_ACTIVIDAD 8 Intro JS y DOM</title>
+  <link rel="stylesheet" href="css/style.css" >
+
+  <script>
+    function cambiarColor(){
+        const elementos = document.getElementsByClassName('nota');
+        
+        for(i=0; i<elementos.length; i++){
+            elementos[i].style.color="blue";
+        }
+    }
+  </script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Ejercicio 1</a>
+    <a href="ejercicio2.html">Ejercicio 2</a>
+    <a href="ejercicio3.html">Ejercicio 3</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+  </nav>
+
+  <div class="contenido">
+    <h1>Ejercicio 2: Cambiar color de varios elementos</h1>
+    <p>🎯 Objetivo:
+        Usar document.getElementsByClassName() para aplicar un estilo a múltiples elementos.
+        <br>
+        💡 Enunciado:
+        Crea tres párrafos con la clase "nota". Al hacer clic en un botón, todos deben cambiar de color de texto a uno de tu preferencia.</p>
+    <hr>
+    <p class="nota">Nota 1</p>
+    <p class="nota">Nota 2</p>
+    <p class="nota">Nota 3</p>
+    <input type="button" value="Cambiar Color" onclick="cambiarColor();">
+  </div>
+
+</body>
+</html>

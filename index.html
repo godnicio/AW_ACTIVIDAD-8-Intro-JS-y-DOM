@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AW_ACTIVIDAD 8 Intro JS y DOM</title>
+  <link rel="stylesheet" href="css/style.css" >
+
+  <script>
+    function cambiarTexto(){
+
+    const titulo = document.getElementById('titulo');
+    
+        if (titulo.innerHTML === 'Página Original') {
+        titulo.innerHTML = 'Lanigiro Anigáp';
+        } else {
+        titulo.innerHTML = 'Página Original';
+        }
+    }
+  </script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Ejercicio 1</a>
+    <a href="ejercicio2.html">Ejercicio 2</a>
+    <a href="ejercicio3.html">Ejercicio 3</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+  </nav>
+
+  <div class="contenido">
+    <h1>Ejercicio 1: Cambiar el texto de un encabezado</h1>
+    <p>🎯 Objetivo:
+        Usar document.getElementById() para cambiar el texto de un elemento.
+        <br>
+        💡 Enunciado:
+        Crea un encabezado h1-h6 con el texto “Página original” y un botón que, al hacer clic, 
+        cambie el texto a uno de tu preferencia.</p>
+    <hr>
+    <h2 id="titulo">Página Original</h2>
+    <input type="button" value="Cambiar Texto" onclick="cambiarTexto();">
+  </div>
+
+</body>
+</html>

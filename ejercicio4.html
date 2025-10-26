@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AW_ACTIVIDAD 8 Intro JS y DOM</title>
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script>
+        function cambiarFondo() {
+        
+
+        const secciones = document.querySelectorAll("section");
+        secciones.forEach((section, index) => {
+                section.style.backgroundColor = "blue"; // Puedes cambiar este color
+            })
+        }
+    </script>
+  
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Ejercicio 1</a>
+    <a href="ejercicio2.html">Ejercicio 2</a>
+    <a href="ejercicio3.html">Ejercicio 3</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+  </nav>
+
+  <div class="contenido">
+    <h1>Ejercicio 4: Cambiar el fondo de varias secciones</h1>
+    <p>🎯 Objetivo:
+    Usar document.querySelectorAll() para aplicar un fondo a todos los elementos section>.
+    <br>
+    💡 Enunciado:
+    Crea tres secciones section> y un botón que cambie el color de fondo de todas a uno de tu preferecia.</p>
+    <hr>
+    <section>Sección 1</section>
+    <section>Sección 2</section>
+    <section>Sección 3</section>
+    <br>
+    <input type="button" value="Cambiar Color" onclick="cambiarFondo();">
+  </div>
+
+</body>
+</html>

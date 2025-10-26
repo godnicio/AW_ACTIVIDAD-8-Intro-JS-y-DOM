@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AW_ACTIVIDAD 8 Intro JS y DOM</title>
+    <link rel="stylesheet" href="css/style.css" >
+
+    <script>
+        let clicks = 0;
+
+        function aumentarContador() {
+            clicks++; 
+            const numero = document.getElementById('contador');
+            numero.innerText = clicks;
+        }
+    </script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Ejercicio 1</a>
+    <a href="ejercicio2.html">Ejercicio 2</a>
+    <a href="ejercicio3.html">Ejercicio 3</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+  </nav>
+
+  <div class="contenido">
+    <h1>Ejercicio 5: Contador de clics</h1>
+    <p>🎯 Objetivo:
+    Usar getElementById() y innerText para crear un contador que aumente cada vez que se presiona un botón.
+    <br>
+    💡 Enunciado:
+    Crea un botón con el texto “Haz clic” y un párrafo que muestre el número de clics realizados.</p>
+    <hr>
+    <p id="contador">0</p>
+    <input type="button" value="Haz clic" onclick="aumentarContador();">
+    
+  </div>
+
+</body>
+</html>

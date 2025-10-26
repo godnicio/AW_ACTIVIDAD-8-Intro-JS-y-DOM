@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AW_ACTIVIDAD 8 Intro JS y DOM</title>
+  <link rel="stylesheet" href="css/style.css" >
+
+  <script>
+
+    function mostrarOcultar() {
+      const imagen = document.querySelector("img"); 
+      if (imagen.style.display === "none") {
+        imagen.style.display = "block"; 
+      } else {
+        imagen.style.display = "none"; 
+      }
+    }
+  </script>
+  
+</head>
+
+<body>
+
+  <nav>
+    <a href="index.html">Ejercicio 1</a>
+    <a href="ejercicio2.html">Ejercicio 2</a>
+    <a href="ejercicio3.html">Ejercicio 3</a>
+    <a href="ejercicio4.html">Ejercicio 4</a>
+    <a href="ejercicio5.html">Ejercicio 5</a>
+  </nav>
+
+  <div class="contenido">
+    <h1>Ejercicio 3: Mostrar y ocultar una imagen</h1>
+    <p>🎯 Objetivo:
+    Usar document.querySelector() para mostrar u ocultar una imagen.
+    <br>
+    💡 Enunciado:
+    Crea una imagen y un botón. Al hacer clic, si la imagen está visible, debe ocultarse; si está oculta, debe mostrarse.</p>
+    <hr>
+    <img src="images/batman.png" style="height: 200px;">
+    <input type="button" value="Mostrar / Ocultar Imagen" onclick="mostrarOcultar();">
+  </div>
+
+</body>
+</html>
